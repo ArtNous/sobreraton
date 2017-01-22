@@ -34,21 +34,6 @@ button{
 	margin: 15px auto;
 }
 
-.tooltips{
-	background-color: #9EE;
-	margin: 5px 0;
-	float: left;
-	width: 100%;
-	padding: 20px 10px;
-}
-
-.tooltips div{
-	margin: 0 15px;
-	display: inline;
-	padding: 7px;
-	background-color: #33B;
-	color: white;
-}
 /* ---------------------------------- */
 
 /* ---Configuracion general animaciones----- */
