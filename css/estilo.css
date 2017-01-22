@@ -12,9 +12,10 @@ button{
 	float: left;
 	margin: 0 5px;
 	padding: 4px 8px;
-	background-color: #4C3;
+	background-color: #973;
 	font-family: 'Amarillo';
 	border: none;
+	color: white;
 }
 
 .botones{
