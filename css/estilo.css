@@ -17,7 +17,7 @@ button{
 	border: none;
 }
 
-.botones{
+.botones,.imagenes{
 	background-color: #123;
 	float: left;
 	width: 100%;
@@ -414,6 +414,28 @@ button{
 
 /* ---------------------------------- */
 
-/* --------------------------TOOLTIPS---------------------------------- */
+/* -------------------------------3D----------------------------------- */
+
+.dim3 {
+	position: relative;
+}
+
+.dim3::before{
+	content: "calos";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	width: 100%;
+	background-color: #fff;
+}
+
+.dim3.izq{
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
 
 
