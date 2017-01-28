@@ -1,0 +1,340 @@
+/* -----------Boton baja-------------- */
+.slidedown{
+	position: relative;
+	bottom: 0;
+	-webkit-transition: bottom 0.3s;
+	-o-transition: bottom 0.3s;
+	transition: bottom 0.3s;
+}
+
+.slidedown:hover{
+	bottom: -5px;
+	cursor: pointer;
+}
+
+
+/* ----------------------------------- */
+
+/* ----------Boton sube-------------- */
+.slideup{
+	position: relative;
+	top: 0;
+	-webkit-transition: top 0.3s;
+	-o-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.slideup:hover{
+	top: -5px;
+	cursor: pointer;
+}
+
+/* ----------------------------------- */
+
+/* ----------------------------LINEAS--------------------------------- */
+
+/* -----Linea inferior de borde------- */
+
+.bordeInf::before{
+	width: 0;
+	height: 2px;
+	bottom: -0.4em;
+	left: 0;
+	-webkit-transition: width 0.3s;
+	-o-transition: width 0.3s;
+	transition: width 0.3s;
+}
+
+.bordeInf:hover{
+	cursor: pointer;
+}
+
+.bordeInf:hover::before{
+	width: 100%;
+}
+
+/* ----------------------------------- */
+
+/* ----Linea superior de borde-------- */
+
+.bordeSup::before{
+	width: 0;
+	height: 2px;
+	top: -0.4em;
+	left: 0;
+	-webkit-transition: width 0.3s;
+	-o-transition: width 0.3s;
+	transition: width 0.3s;
+}
+
+.bordeSup:hover{
+	cursor: pointer;
+}
+
+.bordeSup:hover::before{
+	width: 100%;
+}
+
+/* ----------------------------------- */
+
+/* -------Borde izquierdo------------- */
+
+.bordeIzq::before{
+	width: 2px;
+	height: 0;
+	top: 0;
+	left: -0.3em;
+	-webkit-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.bordeIzq:hover{
+	cursor: pointer;
+}
+
+.bordeIzq:hover::before{
+	height: 100%;
+}
+
+/* ----------------------------------- */
+
+/* -----------Borde derecho----------- */
+
+.bordeDer::before{
+	width: 2px;
+	height: 0;
+	top: 0;
+	right: -0.3em;
+	-webkit-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.bordeDer:hover{
+	cursor: pointer;
+}
+
+.bordeDer:hover::before{
+	height: 100%;
+}
+
+/* ----------------------------------- */
+
+/* ----------Abren Abajo-------------- */
+
+.abrenDosInf::before,.abrenDosInf::after{
+	height: 2px;
+	bottom: -0.4em;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.abrenDosInf::before{
+	left: 50%;
+	right: 50%;
+}
+
+.abrenDosInf::after{
+	left: 50%;
+	right: 50%;
+}
+
+.abrenDosInf:hover{
+	cursor: pointer;
+}
+
+.abrenDosInf:hover::before{
+	left: 0;
+}
+
+.abrenDosInf:hover::after{
+	right: 0;
+}
+
+/* ----------------------------------- */
+
+/* ---------Cierran abajo------------- */
+
+.cierranDosInf::before,.cierranDosInf::after{
+	height: 2px;
+	bottom: -0.4em;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.cierranDosInf::before{
+	left: 0;
+	right: 100%;
+}
+
+.cierranDosInf::after{
+	left: 100%;
+	right: 0;
+}
+
+.cierranDosInf:hover{
+	cursor: pointer;
+}
+
+.cierranDosInf:hover::before{
+	left: 0;
+	right: 50%;
+}
+
+.cierranDosInf:hover::after{
+	right: 0;
+	left: 50%;
+}
+
+/* ----------------------------------- */
+
+/* ---------------------------RELLENO----------------------------------- */
+
+/* --------hacia la derecha------ */
+.abre-Der::before{
+	height: 100%;
+	width: 0;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	-webkit-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.abre-Der:hover::before{
+	width: 100%;
+}
+
+/* ---------------------------------- */
+
+
+/* --------hacia la izquierda---- */
+.abre-Izq::before{
+	height: 100%;
+	width: 0;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	-webkit-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.abre-Izq:hover::before{
+	width: 100%;
+}
+
+/* ---------------------------------- */
+
+/* --------hacia abajo----------- */
+.abre-Abajo::before{
+	height: 0;
+	width: 100%;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	-webkit-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.abre-Abajo:hover::before{
+	height: 100%;
+}
+
+/* ---------------------------------- */
+
+/* --------hacia arriba---------- */
+.abre-Arriba::before{
+	height: 0;
+	width: 100%;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.abre-Arriba:hover::before{
+	height: 100%;
+}
+
+/* ---------------------------------- */
+
+/* --------escala cuadro--------- */
+.escala::before{
+	z-index: -1;
+	bottom: 100%;
+	left: 100%;
+	right: 100%;
+	top: 100%;
+	-webkit-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.escala:hover::before{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+/* ---------------------------------- */
+
+/* --------escala triangulo--------- */
+.escala-triangulo{
+	overflow: hidden;
+}
+.escala-triangulo::before{
+	z-index: -1;
+	bottom: 100%;
+	left: 100%;
+	right: 100%;
+	top: 100%;
+	-webkit-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.escala-triangulo:hover::before{
+	bottom: -2em;
+	left: -0.95em;
+	right: -0.95em;
+	top: -2em;
+}
+
+/* ---------------------------------- */
